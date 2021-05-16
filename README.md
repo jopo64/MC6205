@@ -1,5 +1,5 @@
 # MC6205
-- code for driving a MC6205 russian 100x100 pixel plasma tube
+- code for driving a MC6205 with a russian 100x100 pixel plasma tube
 - hardware testing code
 - weatherstation based on openweathermap
 - to get full usage of the sowtware, a hardware change must be made before
