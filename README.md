@@ -4,7 +4,8 @@
 - weatherstation based on openweathermap
 - to get full usage of the sowtware, a hardware change must be made before
   - you need a custom eprom for having the ISO-Latin-1 characters
-<br/>ESP32-WROOM
+
+Arduino on ESP32-WROOM
 
 # hackady.io
 please see project details at https://hackaday.io/project/178954
