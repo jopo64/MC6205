@@ -1,5 +1,5 @@
 # MC6205
-driver code and hardware for mc6205 russian 100x100 pixel plasma tube
+code for driving a MC6205 russian 100x100 pixel plasma tube
 <br/>ESP32-WROOM
 
 # hackady.io
