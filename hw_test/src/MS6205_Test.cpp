@@ -23,15 +23,29 @@
 
 char SERDEBUG = 0;
 
-// MC6205 hardware pins
-const char updatePin      = 19;   // 16B
-const char clearScreenPin = 5;    // 18A
-const char cursorPin      = 18;   // 16A
+//#define internalPCB   // which PCB to use, internal MC6205 housing or the connector one. The postert MC6205 PCB's are meant here. Define your own GPIO's if you using your own
 
-// shift register pins
-const char latchPin       = 12;   // Latch  | Pin 12 of 74LS595 (ST_CP)
-const char clockPin       = 14;   // CLK    | Pin 11 of 74LS595 (SH_CP)
-const char dataPin        = 13;   // MOSI   | Pin 14 of 74LS595 (DS)
+#ifdef internalPCB
+  // MC6205 hardware pins to Arduino (internal PCB)
+  const char updatePin      = 19;   // 16B
+  const char clearScreenPin = 5;    // 18A
+  const char cursorPin      = 18;   // 16A
+
+  // shift register pins
+  const char latchPin       = 12;   // Latch  | Pin 12 of 74LS595 (ST_CP)
+  const char clockPin       = 14;   // CLK    | Pin 11 of 74LS595 (SH_CP)
+  const char dataPin        = 13;   // MOSI   | Pin 14 of 74LS595 (DS)
+#else
+  // MC6205 hardware pins to Arduino (connector PCB)
+  const char updatePin      = 3;    // 16B
+  const char clearScreenPin = 19;   // 18A
+  const char cursorPin      = 21;   // 16A
+
+  // shift register pins
+  const char latchPin       = 5;    // Latch  | Pin 12 of 74LS595 (ST_CP)
+  const char clockPin       = 18;   // CLK    | Pin 11 of 74LS595 (SH_CP)
+  const char dataPin        = 23;   // MOSI   | Pin 14 of 74LS595 (DS)
+#endif
 
 
 const char MAXCHAR  = 160;
