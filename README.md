@@ -10,3 +10,6 @@ Arduino on ESP32-WROOM
 
 # hackady.io
 please see project details at https://hackaday.io/project/178954
+
+
+![MC6205](Hardware/images/MC6205.jpg)
