@@ -1,5 +1,6 @@
 # MC6205
 - code for driving a MC6205 with a russian 100x100 pixel plasma tube
+- Eagle layout files
 - hardware testing code
 - weatherstation based on openweathermap.org
 - to get full usage of the software, a hardware change must be made before
